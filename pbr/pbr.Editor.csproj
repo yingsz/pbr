@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABD217BF-1567-17F8-B81C-4E839FF6EA63}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2017.4.23f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_23;UNITY_2017_4;UNITY_2017;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_23;UNITY_2017_4;UNITY_2017;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceTesting">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/PerformanceTesting/UnityEngine.PerformanceTesting.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WSA.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.WSA.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.23f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\builtin_shaders-2017.4.23f1\Editor\StandardParticlesShaderGUI.cs" />
+    <Compile Include="Assets\builtin_shaders-2017.4.23f1\Editor\StandardRoughnessShaderGUI.cs" />
+    <Compile Include="Assets\builtin_shaders-2017.4.23f1\Editor\StandardShaderGUI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\AutoLight.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\GLSLSupport.glslinc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\HLSLSupport.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\Lighting.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\SpeedTreeBillboardCommon.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\SpeedTreeCommon.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\SpeedTreeVertex.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\SpeedTreeWind.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\TerrainEngine.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\TerrainSplatmapCommon.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\Tessellation.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityBuiltin2xTreeLibrary.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityBuiltin3xTreeLibrary.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityCG.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityCG.glslinc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityCustomRenderTexture.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityDeferredLibrary.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityDeprecated.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityGBuffer.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityGlobalIllumination.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityImageBasedLighting.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityInstancing.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityLightingCommon.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityMetaPass.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityPBSLighting.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityShaderUtilities.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityShaderVariables.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityShadowLibrary.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnitySprites.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardBRDF.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardConfig.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardCore.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardCoreForward.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardCoreForwardSimple.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardInput.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardMeta.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardParticleShadow.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardParticles.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardShadow.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityStandardUtils.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\CGIncludes\UnityUI.cginc" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResources\Font.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResources\Internal-Clear.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResources\Internal-Colored.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResources\Internal-ErrorShader.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResources\PerformanceTools\FrameDebuggerRenderTargetDisplay.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResources\internalskinning.compute" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\AR\Shaders\TangoARRender.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Alpha-BumpSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Alpha-Bumped.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Alpha-Diffuse.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Alpha-Glossy.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Alpha-Parallax.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Alpha-ParallaxSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Alpha-VertexLit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\AlphaTest-BumpSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\AlphaTest-Bumped.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\AlphaTest-Diffuse.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\AlphaTest-Glossy.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\AlphaTest-SoftEdgeUnlit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\AlphaTest-VertexLit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Compositing.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Cubemaps\CubeBlend.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Cubemaps\CubeBlur.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Cubemaps\CubeBlurOdd.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Cubemaps\CubeCopy.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Decal.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Flare.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\GIDebug\ShowLightMask.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\GIDebug\TextureUV.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\GIDebug\UV1sAsPositions.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\GIDebug\VertexColors.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Illumin-BumpSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Illumin-Bumped.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Illumin-Diffuse.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Illumin-Glossy.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Illumin-Parallax.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Illumin-ParallaxSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Illumin-VertexLit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-BlitCopy.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-BlitCopyDepth.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-BlitCopyWithDepth.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-BlitToDepth.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-BlitToDepth_MSAA.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-CombineDepthNormals.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-ConvertTexture.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-DeferredReflections.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-DeferredShading.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-DepthNormalsTexture.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-Flare.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-GUIRoundedRect.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-GUITexture.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-GUITextureBlit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-GUITextureClip.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-GUITextureClipText.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-Halo.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-MotionVectors.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-PrePassLighting.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-ScreenSpaceShadows.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Internal-StencilWrite.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Lightmap-BumpSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Lightmap-Bumped.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Lightmap-Diffuse.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Lightmap-Glossy.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Lightmap-VertexLit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-BumpSpec-1DirectionalLight.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-BumpSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-Bumped.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-Diffuse.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-Lightmap-Unlit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-Particle-Add.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-Particle-Alpha-VertexLit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-Particle-Alpha.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-Particle-Multiply.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-Skybox.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-VertexLit-OnlyDirectionalLights.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Mobile\Mobile-VertexLit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionBark.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionBarkRendertex.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionLeaves.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionLeavesRendertex.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\SpeedTree.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\SpeedTreeBillboard.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBark.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBarkOptimized.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBarkRendertex.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeaves.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesFast.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesFastOptimized.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesOptimized.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesRendertex.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Normal-BumpSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Normal-Bumped.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Normal-Diffuse.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Normal-DiffuseDetail.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Normal-DiffuseFast.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Normal-Glossy.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Normal-Parallax.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Normal-ParallaxSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Normal-VertexLit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle Add.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle AddMultiply.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle AddSmooth.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle Alpha Blend.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle Anim Alpha Blend.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle Blend.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle Multiply.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle MultiplyDouble.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle Premultiply Blend.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle Standard Surface.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle Standard Unlit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Particle VertexLit Blended.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Reflect-BumpNolight.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Reflect-BumpSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Reflect-BumpVertexLit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Reflect-Bumped.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Reflect-Diffuse.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Reflect-Glossy.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Reflect-Parallax.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Reflect-ParallaxSpec.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Reflect-VertexLit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Skybox-Cubed.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Skybox-Panoramic.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Skybox-Procedural.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Skybox.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Sprites-Default.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Sprites-Diffuse.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Sprites-Mask.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Standard.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\StandardRoughness.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\StandardSpecular.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Details\VertexLit.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Details\WavingGrass.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Details\WavingGrassBillboard.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Splats\AddPass.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Splats\FirstPass.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Splats\Specular-AddPass.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Splats\Specular-Base.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Splats\Specular-FirstPass.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Splats\Standard-AddPass.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Splats\Standard-Base.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Splats\Standard-FirstPass.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Trees\BillboardTree.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\TerrainShaders\Trees\CameraFacingBillboardTree.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-CompositeOverdraw.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Default.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-DefaultETC1.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-DefaultFont.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Lit-Bumped.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Lit-Detail.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Lit-Refraction.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Lit-RefractionDetail.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Lit-Transparent.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Overdraw.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Unlit-Detail.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Unlit-Text.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Unlit-TextDetail.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\UI\UI-Unlit-Transparent.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Unlit\Unlit-Alpha.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Unlit\Unlit-AlphaTest.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Unlit\Unlit-Color.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\Unlit\Unlit-Normal.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VR\Shaders\BlitTexArraySlice.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VR\Shaders\BlitTexArraySliceToDepth.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VR\Shaders\BlitTexArraySliceToDepth_MSAA.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VR\Shaders\ClippingMask.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VR\Shaders\Internal-VRDistortion.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VR\Shaders\SpatialMappingOcclusion.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VR\Shaders\SpatialMappingWireframe.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VR\Shaders\VideoBackground.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VideoDecode.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VideoDecodeAndroid.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\DefaultResourcesExtra\VideoDecodeOSX.shader" />
+    <None Include="Assets\builtin_shaders-2017.4.23f1\license.txt" />
+    <None Include="Assets\pbr.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
